@@ -1,0 +1,5 @@
+checkpoint/
+imgs/
+results/
+samples/
+*.pyc
