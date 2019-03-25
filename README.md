@@ -2,9 +2,9 @@
 
 Automatic coloring and shading of Dune coloring book using manga-style lineart model from deepcolor. Makes use of Tensorflow + cGANs
 
-![](img/example01.png)
+![example01](img/example01.png)
 
-![](img/example02.png)
+![example02](img/example02.png)
 
 ## Dune PDF
 
@@ -76,9 +76,15 @@ Alternatively you can sync the training set I used down from S3 (If this gets ha
 aws s3 sync s3://devopstar/resources/deep-dune-coloring/imgs imgs/
 ```
 
+At this point you can start training by running the following
+
+```bash
+python main.py train
+```
+
 ### Pre-trained model
 
-If you would like to use the pre-trained model you can pull down a copy from my S3 (If this gets hammers I will remove acces to it. Contact me @nathangloverAUS on twitter if you would like access)
+If you would like to use the pre-trained model you can pull down a copy from my S3 (If this gets hammers I will remove access to it. Contact me @nathangloverAUS on twitter if you would like access)
 
 ```bash
 # From within deepcolor/
@@ -106,9 +112,7 @@ Once you have either run the training task (and have a checkpoint folder) or hav
 python server.py
 ```
 
-Open up the web interface on http://localhost:8000
-
-### 
+Open up the web interface on [http://localhost:8000](http://localhost:8000)
 
 ## Attribution
 
